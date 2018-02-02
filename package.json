@@ -1,0 +1,32 @@
+{
+  "name": "@zcong/eslint-config-custom",
+  "version": "0.1.0",
+  "description": "custom eslint config",
+  "repository": {
+    "url": "zcong1993/@zcong/eslint-config-custom",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "test": "npm run lint && echo 'no tests!'",
+    "lint": "eslint index.js",
+    "format": "prettier --write **/*.{js,json,md}"
+  },
+  "author": "zcong1993 <1005997919@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-markdown": "^1.0.0-beta.6",
+    "eslint-plugin-prettier": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-rem": "^3.0.0",
+    "prettier": "^1.10.2",
+    "xo": "^0.18.0"
+  },
+  "eslintConfig": {
+    "extends": ["./index.js"]
+  }
+}
